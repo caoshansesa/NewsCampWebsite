@@ -1,14 +1,130 @@
-# 这里是可爱的News Camp site,等待同工的修建
-
 <!DOCTYPE html>
 <html>
+<head>
+    <title>New England Winter Seeker's Camp 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            width: 100%;
+            height: 500px;
+            background-image: url('groupphoto2019.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-opacity: 0.5;
+            text-align: center;
+            color: black;
+            padding: 20px 0;
+        }
+        .title {
+        	font-size: 40px;
+/*    		background-color: rgba(0, 0, 0, 0.3); */
+    		display: inline; 
+    		padding: 5px 10px; 
+    		color: white; 
+/*    		box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3); */
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+		}
+        .menu {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .content {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        .two-columns > div {
+            width: 48%;
+        }
+        .site-photo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
 <body>
+    <div class="header">
+        <h1><span class="title">2023 New England Winter Seeker's Camp</h1>
+        <!-- <h2>12/22(Fri) - 12/26(Tue)</h2> -->
+        
+    </div>
+    <div class="menu">
+            <a href="#registration">Registration</a>
+            <a href="#event-details">Event Details</a>
+            <a href="#site-photo">Camp Site Photos</a>
+            <a href="#gallery">Last Year Highlights</a>
+        </div>
 
-<h1>My First Heading</h1>
+    <div class="content" id="registration">
+        <h1>Registration</h1>
+        <div>
+        	
+            <div>
+                <p><b>Event Date</b> : Dec 22 - Dec 26, 2023</p>
+                <p><b>Camp Site Address</b>: 574 Ashford Center Rd, Ashford, CT 06278 </p>
+                <p><b>Fee</b>: $270 per person</p>
+               <p><b>Register link</b>: <a href="https://docs.google.com/forms/d/e/1FAIpQLSezyTqjO6swrwRjJTluML13gmT6dO1DHPnuT_1vv567Yc4MFQ/viewform">Click here</a></p>
+            </div>
+            
+        </div>
+    </div>
+	
+    <div class="content" id="event-details">
+        <h1>Event Details</h1>
+        <div class="two-columns">
+        <div>
+        <img src="poster.jpeg" alt="poster">
+    	</div>
+    	<div>
+        <img src="schedule.jpeg" alt="Event Schedule">
+        </div>
+        </div>
 
-<p>My first paragraph.</p>
+    </div>
+
+    <div class="content" id="site-photo">
+        <h1>Camp Site Photo</h1>
+        <div class="site-photo">
+            
+            <img src="image/chapel.jpeg" alt="Photo 1">
+            <img src="image/chapel2.jpeg" alt="Photo 2">
+            <img src="image/dinning.jpeg" alt="Photo 2">
+            <img src="image/room.jpeg" alt="Photo 2">
+            <img src="image/room2.jpeg" alt="Photo 2">
+            <img src="image/gym.jpeg" alt="Photo 2">
+            
+        </div>
+    </div>
+
+    <div class="content" id="gallery">
+        <h1>Last Year Highlights</h1>
+        <div class="gallery">
+            <!-- Insert your images and videos here -->
+            
+            <!-- ... -->
+        </div>
+    </div>
 
 </body>
 </html>
-
-
