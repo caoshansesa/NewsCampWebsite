@@ -6,6 +6,9 @@
         body {
             font-family: Arial, sans-serif;
         }
+        .center-text {
+            text-align: center;
+        }
         .header {
             width: 100%;
             height: 500px;
@@ -39,18 +42,30 @@
             width: 70%;
             margin: 0 auto;
             padding: 20px 0;
+            border-bottom: 2px solid #ccc; /* Top border */
+
+        }
+        .registration {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px 0;
+            border-bottom: 2px solid #ccc; /* Top border */
+    		padding-top: 20px; /* Add some space above the content */
         }
         .two-columns {
             display: flex;
             justify-content: space-between;
+           
         }
         .two-columns > div {
             width: 48%;
         }
         .site-photo {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
+            border-bottm: 2px solid #ccc; /* Top border */
+    		padding-top: 20px; /* Add some space above the content */
         }
         .gallery {
             display: grid;
@@ -61,10 +76,18 @@
             width: 100%;
             height: auto;
         }
+        .video-container {
+    		text-align: center; /* Center the content */
+    		
+    		padding-top: 20px; /* Add some space above the content */
+		}
+
+
+
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header" >
         <h1><span class="title">2023 New England Winter Seeker's Camp</h1>
         <!-- <h2>12/22(Fri) - 12/26(Tue)</h2> -->
         
@@ -75,23 +98,32 @@
             <a href="http://newscamp.church/index.html#site-photo">Camp Site Photos</a>
             <a href="http://newscamp.church/past-photo.html">Newscamp Photo Gallery</a>
         </div>
+    
+   	<div class="content">
+    <div class="video-container" id="video">
+        <h2>What is NEWSCamp?</h2>
+        <!-- Embed YouTube Video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vWJUZTQec18?si=dHNCIqyAi0Xt_jlQ&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+     </div>
 
-    <div class="content" id="registration">
-        <h1>Registration</h1>
+
+    <div class="registration" id="registration">
+        <h1 class="center-text">Registration</h1>
         <div>
         	
             <div>
-                <p><b>Event Date</b> : Dec 22 - Dec 26, 2023</p>
-                <p><b>Camp Site Address</b>: 574 Ashford Center Rd, Ashford, CT 06278 </p>
-                <p><b>Fee</b>: $270 per person</p>
-               <p><b>Register link</b>: <a href="https://docs.google.com/forms/d/e/1FAIpQLSezyTqjO6swrwRjJTluML13gmT6dO1DHPnuT_1vv567Yc4MFQ/viewform">Click here</a></p>
+                <p class="center-text"><b>Event Date</b> : Dec 22 - Dec 26, 2023</p>
+                <p class="center-text"><b>Camp Site Address</b>: 574 Ashford Center Rd, Ashford, CT 06278 </p>
+                <p class="center-text"><b>Fee</b>: $270 per person</p>
+               <p class="center-text"><b>Register link</b>: <a href="https://docs.google.com/forms/d/e/1FAIpQLSezyTqjO6swrwRjJTluML13gmT6dO1DHPnuT_1vv567Yc4MFQ/viewform">Click here</a></p>
             </div>
             
         </div>
     </div>
-	
+
     <div class="content" id="event-details">
-        <h1>Event Details</h1>
+        <h1 class="center-text">Event Details</h1>
         <div class="two-columns">
         <div>
         <img src="image/poster.jpeg" alt="poster">
@@ -106,10 +138,13 @@
     <div class="content" id="site-photo">
         <h1>Camp Site Photo</h1>
         <div class="site-photo">
-            
+            <img src="image/sitemap.jpeg" alt="Photo 1">
+            <img src="image/outside.jpeg" alt="Photo 1">
+            <img src="image/room3.JPG" alt="Photo 1">
+            <img src="image/room4.JPG" alt="Photo 1">
+            <img src="image/chapel3.jpeg" alt="Photo 1">
             <img src="image/chapel.jpeg" alt="Photo 1">
             <img src="image/chapel2.jpeg" alt="Photo 2">
-            <img src="image/dinning.jpeg" alt="Photo 2">
             <img src="image/room.jpeg" alt="Photo 2">
             <img src="image/room2.jpeg" alt="Photo 2">
             <img src="image/gym.jpeg" alt="Photo 2">
