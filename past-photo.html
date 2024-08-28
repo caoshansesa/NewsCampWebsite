@@ -6,11 +6,14 @@
         body {
             font-family: Arial, sans-serif;
         }
+
+
         .header {
             width: 100%;
-            height: 100%; /* Automatically adjusts height to fit the image */
-            background-image: url('image/2023group-crop.jpg');;
-            background-size: cover; /* Ensures the entire image is visible */
+            min-height: 500px; /* Ensures the header always has a minimum height */
+            height: auto; /* Adjusts height based on content */
+            background-image: url('image/2023group-crop.jpg');
+            background-size: cover; /* Ensures the image covers the entire header area */
             background-position: center top; /* Aligns the image to the top of the page */
             background-repeat: no-repeat;
             position: relative; /* Allows absolute positioning of the title */
@@ -19,7 +22,7 @@
         }
 
         .title {
-            font-size: calc(1.5rem + 1vw); /* Adjusts font size based on screen width */
+            font-size: 2rem; /* Fixed font size */
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             position: absolute;
@@ -30,15 +33,20 @@
             padding-right: 20px; /* Fixed padding on right */
             box-sizing: border-box; /* Ensures padding is included in the element's width */
             max-width: 90%; /* Ensures the title does not exceed 90% of the header's width */
-            white-space: nowrap; /* Prevents title from wrapping */
+            white-space: normal; /* Allows the title to wrap onto multiple lines */
+            line-height: 1.2; /* Adjusts the line height for readability */
+            text-align: center; /* Center-aligns the text within the title box */
         }
 
         @media (max-width: 768px) {
             .title {
-                font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
                 top: 5%; /* Adjust the top distance for smaller screens */
+                padding-left: 10px; /* Reduce padding for smaller screens */
+                padding-right: 10px; /* Reduce padding for smaller screens */
             }
         }
+
+
 
 
         .menu {
