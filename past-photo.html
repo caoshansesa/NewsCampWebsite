@@ -10,40 +10,22 @@
 
         .header {
             width: 100%;
-            min-height: 500px; /* Ensures the header always has a minimum height */
-            height: auto; /* Adjusts height based on content */
-            background-image: url('image/2023group-crop.jpg');
-            background-size: cover; /* Ensures the image covers the entire header area */
-            background-position: center top; /* Aligns the image to the top of the page */
-            background-repeat: no-repeat;
-            position: relative; /* Allows absolute positioning of the title */
+            height: 500px;
+            background-image: url('image/2023group-crop.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-opacity: 0.5;
             text-align: center;
-            margin: 0; /* Remove any default margins to prevent white space */
+            color: black;
+            padding: 20px 0;
         }
-
         .title {
-            font-size: 2rem; /* Fixed font size */
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            position: absolute;
-            top: 10%; /* Fixed distance from the top of the image */
-            left: 50%;
-            transform: translateX(-50%); /* Center the title horizontally */
-            padding-left: 20px; /* Fixed padding on left */
-            padding-right: 20px; /* Fixed padding on right */
-            box-sizing: border-box; /* Ensures padding is included in the element's width */
-            max-width: 90%; /* Ensures the title does not exceed 90% of the header's width */
-            white-space: normal; /* Allows the title to wrap onto multiple lines */
-            line-height: 1.2; /* Adjusts the line height for readability */
-            text-align: center; /* Center-aligns the text within the title box */
-        }
-
-        @media (max-width: 768px) {
-            .title {
-                top: 5%; /* Adjust the top distance for smaller screens */
-                padding-left: 10px; /* Reduce padding for smaller screens */
-                padding-right: 10px; /* Reduce padding for smaller screens */
-            }
+            font-size: 40px;
+/*          background-color: rgba(0, 0, 0, 0.3); */
+            display: inline; 
+            padding: 5px 10px; 
+            color: white; 
+/*          box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3); */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
         }
 
 
