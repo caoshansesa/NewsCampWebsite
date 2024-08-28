@@ -8,34 +8,34 @@
         }
         .header {
             width: 100%;
-            height: 500px;
+            height: auto; /* Automatically adjusts height to fit the image */
             background-image: url('image/2023group-crop.jpg');
-            background-size: cover;
-            background-position: center;
+            background-size: contain; /* Ensures the entire image is visible */
+            background-position: center top; /* Aligns the image to the top of the page */
             background-repeat: no-repeat;
-            position: relative; /* Allow absolute positioning of the title */
+            position: relative; /* Allows absolute positioning of the title */
             text-align: center;
-            color: black;
             margin: 0; /* Remove any default margins to prevent white space */
         }
 
         .title {
-            font-size: 5vw; /* Responsive font size based on viewport width */
+            font-size: calc(1.5rem + 1vw); /* Adjusts font size based on screen width */
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             position: absolute;
             top: 10%; /* Fixed distance from the top of the image */
             left: 50%;
             transform: translateX(-50%); /* Center the title horizontally */
-            white-space: nowrap; /* Prevent title from wrapping */
+            padding-left: 20px; /* Fixed padding on left */
+            padding-right: 20px; /* Fixed padding on right */
+            box-sizing: border-box; /* Ensures padding is included in the element's width */
+            max-width: 90%; /* Ensures the title does not exceed 90% of the header's width */
+            white-space: nowrap; /* Prevents title from wrapping */
         }
 
         @media (max-width: 768px) {
-            .header {
-                height: auto;
-            }
             .title {
-                font-size: 8vw; /* Adjust the font size for smaller screens */
+                font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
                 top: 5%; /* Adjust the top distance for smaller screens */
             }
         }
