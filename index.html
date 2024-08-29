@@ -20,17 +20,17 @@
             padding: 20px 0;
         }
         .title {
-        	font-size: 40px;
-/*    		background-color: rgba(0, 0, 0, 0.3); */
-    		display: inline; 
-    		padding: 5px 10px; 
-    		color: white; 
-/*    		box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3); */
-			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
-		}
-		.ending {
-			font-size: 40px;
-		}
+            font-size: 40px;
+/*          background-color: rgba(0, 0, 0, 0.3); */
+            display: inline; 
+            padding: 5px 10px; 
+            color: white; 
+/*          box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3); */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+        }
+        .ending {
+            font-size: 40px;
+        }
         .menu {
             background: rgba(0, 0, 0, 0.5);
             padding: 10px;
@@ -53,23 +53,55 @@
             margin: 0 auto;
             padding: 20px 0;
             border-bottom: 2px solid #ccc; /* Top border */
-    		padding-top: 20px; /* Add some space above the content */
-        }
-        .two-columns {
-            display: flex;
-            justify-content: space-between;
-           
-        }
-        .two-columns > div {
-            width: 48%;
+            padding-top: 20px; /* Add some space above the content */
         }
         .site-photo {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            border-bottm: 2px solid #ccc; /* Top border */
-    		padding-top: 20px; /* Add some space above the content */
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
         }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 48%; /* Each column takes 48% of the container width */
+        }
+
+        .column figure {
+            margin: 0 0 20px 0; /* Set the same margin for top, right, bottom, and left */
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%; /* Images take the full width of the column */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .column figure:last-child {
+            margin-bottom: 0; /* Remove margin from the last figure in each column */
+        }
+
+        figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+            color: #555;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -80,10 +112,10 @@
             height: auto;
         }
         .video-container {
-    		text-align: center; /* Center the content */
-    		
-    		padding-top: 20px; /* Add some space above the content */
-		}
+            text-align: center; /* Center the content */
+            
+            padding-top: 20px; /* Add some space above the content */
+        }
 
         /* Button Style */
         .register-button {
@@ -128,7 +160,7 @@
             <a href="http://newscamp.church/past-photo.html">Newscamp Photo Gallery</a>
         </div>
     <!--
-   	<div class="content">
+    <div class="content">
     <div class="video-container" id="video">
         <h2>What is NEWSCamp?</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/JJ8tIj_sKg4?si=OfwU46mMa6t2GaTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -170,8 +202,8 @@
         <div class="two-columns">
         <div>
         <img src="image/2024poster.jpg" alt="poster">
-    	</div>
-    	<div>
+        </div>
+        <div>
         <img src="image/Schedule.png" alt="Event Schedule">
         </div>
         </div>
@@ -179,35 +211,75 @@
     </div> -->
 
     <div class="content" id="site-photo">
-        <h1 class="center-text">Camp Site Photo</h1>
-        <div class="site-photo">
-            <img src="image/sitemap.jpeg" alt="Photo 1">
-            <img src="image/outside.jpeg" alt="Photo 1">
-            <img src="image/room3.JPG" alt="Photo 1">
-            <img src="image/room4.jpg" alt="Photo 1">
-            <img src="image/chapel3.jpeg" alt="Photo 1">
-            <img src="image/chapel.jpeg" alt="Photo 1">
-            <img src="image/chapel2.jpeg" alt="Photo 2">
-            <img src="image/room.jpeg" alt="Photo 2">
-            <img src="image/room2.jpeg" alt="Photo 2">
-            <img src="image/gym.jpeg" alt="Photo 2">
+    <h1 class="center-text">Camp Site Photos</h1>
+    <div class="site-photo">
+        <div class="column">
+            <figure>
+                <img src="image/sitemap.jpeg" alt="Site Map">
+                <figcaption>Site Map</figcaption>
+            </figure>
+            <figure>
+                <img src="image/outside.jpeg" alt="Outside View">
+                <figcaption>Chapel</figcaption>
+            </figure>
+            <figure>
+                <img src="image/chapel3.jpeg" alt="Chapel 3">
+                <figcaption>Chapel</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/2023-sports.jpeg" alt="Gym">
+                <figcaption>在体育馆里一起运动 (2023)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/2023-campfire.jpeg" alt="campfire">
+                <figcaption>Campfire</figcaption>
+            </figure>
+            
+            
+            
+        </div>
+        <div class="column">
+            <figure>
+                <img src="image/2023-site-rock.jpeg" alt="Outside View">
+                <figcaption>Camp Entrance - The Lord is My Rock</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="image/2023-chapel.jpeg" alt="Room 3">
+                <figcaption>2023 Newscamp 聚会</figcaption>
+            </figure>
+            <figure>
+                <img src="image/2023-food.jpeg" alt="Room">
+                <figcaption>春田教会为我们预备的美食(2023)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/2023-nature.jpg" alt="Room">
+                <figcaption>Campsite 自然风光</figcaption>
+            </figure>
+            
             
         </div>
     </div>
+</div>
+
+
     <div class="content">
     <div class="ending" id="ending">
-    	<p class="center-text"><b>今年冬天，我们期待与你相会在NEWSCamp！</b></p>
-    </div>	
+        <p class="center-text"><b>今年冬天，我们期待与你相会在NEWSCamp！</b></p>
+    </div>  
     </div>
 
     <div class="content">
     <footer >
     <p>&copy; 2024 New England Winter Seeker's Camp</p>
     
-	</footer>
- 	</div>
+    </footer>
+    </div>
 
-	</body>
+    </body>
 
 
 </html>
