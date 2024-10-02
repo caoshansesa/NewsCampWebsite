@@ -55,6 +55,14 @@
             border-bottom: 2px solid #ccc; /* Top border */
             padding-top: 20px; /* Add some space above the content */
         }
+        .event-details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center images vertically */
+            width: 80%;
+            margin: 0 auto;
+        }
+
         .site-photo {
             display: flex;
             justify-content: space-between;
@@ -167,14 +175,46 @@
     </div>
      </div>
 
-    <div class="content" id="event-details">
+    <<!-- div class="content" id="event-details">
         <h1 class="center-text">2024 NEWSCAMP</h1>
-        
-        <div>
+        <div class="columns">
         <center><img style="max-width: 40%; height: auto; "src="image/2024poster.jpg" alt="poster" ></center>
         </div>
-
+        <div class="columns">
+        <center><img style="max-width: 40%; height: auto; "src="image/2024schedule.jpeg" alt="schedule" ></center>
+        </div>
+    </div> -->
+    <!-- <div class="content" id="event-details">
+    <h1 class="center-text">2024 NEWSCAMP</h1>
+    <div class="site-photo">
+        <div class="column">
+            <figure>
+                <img src="image/2024poster.jpg" alt="Site Map">
+                <figcaption>Site Map</figcaption>
+            </figure>
+            
+        </div>
+        <div class="column">
+            <figure>
+                <img src="image/2024schedule.jpeg" alt="Outside View">
+                <figcaption>Camp Entrance - The Lord is My Rock</figcaption>
+            </figure>
+            
+        </div>
     </div>
+</div> -->
+    <div class="content" id="event-details">
+    <h1 class="center-text">2024 NEWSCAMP</h1>
+    <div class="columns" style="display: flex; align-items: center;">
+        <div class="column" style="flex: 1; text-align: center;">
+            <img src="image/2024poster.jpg" alt="poster" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="column" style="flex: 1; text-align: center;">
+            <img src="image/2024schedule.jpeg" alt="schedule" style="max-width: 90%; height: auto;">
+        </div>
+    </div>
+    </div>
+
 
     <div class="registration" id="registration">
         <h1 class="center-text">Registration</h1>
@@ -187,9 +227,10 @@
             <p class="center-text">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfehbm89D_UMJidFworIRxQIRSeMq5-NXhfCXrfbqO7ks8Ymg/viewform?usp=pp_url" class="register-button">Register Now</a>
             </p>
-        <p class="center-text">
-                <a href="" class="banner">报名截止2024年12月9号</a>
-            </p>
+
+            
+            <p class="center-text"><a href="" class="banner">报名截止2024年12月9号</a></p>
+            <p class="center-text">（前100名注册者可获伴手礼一份）</p>
         </div>
     </div>
     
